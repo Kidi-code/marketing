@@ -45,13 +45,16 @@ export function Navbar() {
 
           <nav className="flex items-center space-x-6">
             <Link href="/" className="text-gray-700 hover:text-gray-900">
-              Hom
+              Home
             </Link>
 
             {/* Marketplace */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex items-center px-2 text-gray-700 hover:text-gray-900">
+                <Button
+                  variant="ghost"
+                  className="flex items-center px-2 text-gray-700 hover:text-gray-900"
+                >
                   <span>Marketplace</span>
                   <ChevronDown size={16} className="ml-1" />
                 </Button>
@@ -75,7 +78,10 @@ export function Navbar() {
             {/* Contracts */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex items-center px-2 text-gray-700 hover:text-gray-900">
+                <Button
+                  variant="ghost"
+                  className="flex items-center px-2 text-gray-700 hover:text-gray-900"
+                >
                   <span>Contracts</span>
                   <ChevronDown size={16} className="ml-1" />
                 </Button>
@@ -91,7 +97,7 @@ export function Navbar() {
                   <AlertCircle size={16} /> <span>Dispute</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-center space-x-2">
-                  <CheckCircle size={16} /> <span>Resolution</span>
+                  <CheckCircle size={16} /> <span>Payment</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -99,7 +105,10 @@ export function Navbar() {
             {/* Partners */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex items-center px-2 text-gray-700 hover:text-gray-900">
+                <Button
+                  variant="ghost"
+                  className="flex items-center px-2 text-gray-700 hover:text-gray-900"
+                >
                   <span>Partners</span>
                   <ChevronDown size={16} className="ml-1" />
                 </Button>
@@ -112,7 +121,10 @@ export function Navbar() {
                   <Truck size={16} /> <span>Logistics</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-center space-x-2">
-                  <Shield size={16} /> <span>Government</span>
+                  <Shield size={16} /> <span>Farmers</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="flex items-center space-x-2">
+                  <Shield size={16} /> <span>manufacturers</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -137,10 +149,13 @@ export function Navbar() {
 
           <div className="relative">
             <Input placeholder="Search..." className="pl-10 pr-3 w-48" />
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
+            <Search
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+              size={16}
+            />
           </div>
         </div>
       </div>
     </header>
-  )
+  );
 }
