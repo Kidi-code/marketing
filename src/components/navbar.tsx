@@ -101,7 +101,10 @@ export function Navbar() {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem className="flex items-center space-x-2">
-                  <CheckCircle size={16} /> <span>Resolution</span>
+                  {/* <CheckCircle size={16} /> <span>Payments</span> */}
+                  <Link href="/payments">
+                    <Button variant="ghost">Payments</Button>
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
