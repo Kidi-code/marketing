@@ -41,11 +41,30 @@ export default function HomePage() {
                 Learn More
               </Button>
             </Link>
-            <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900">
+            <Link href="/farmer">
+              <Button
+                variant="outline"
+                className="bg-yellow-400 font-bold border-blue-600 hover:bg-white hover:text-gray-800 active:bg-gray-200 rounded-xl transition-colors"
+              >
+                Register as Farmer
+              </Button>
+            </Link>
+            {/* <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900">
               Register as Farmer
-            </Button>
-            <Link href="/retailer/register">
-              <Button className="bg-blue-400 hover:bg-blue-500 text-white">
+            </Button> */}
+            {/* <Link href="/retailer">
+              <Button
+                variant="outline"
+                className="text-black border-white hover:bg-white hover:text-gray-800"
+              >
+                Register as Retailer
+              </Button>
+            </Link> */}
+            <Link href="/retailer">
+              <Button
+                variant="outline"
+                className="text-blue-600 font-bold border-blue-600 hover:bg-white hover:text-gray-800 active:bg-gray-200 rounded-xl transition-colors"
+              >
                 Register as Retailer
               </Button>
             </Link>
