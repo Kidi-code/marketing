@@ -111,9 +111,11 @@ export default function HomePage() {
             <Button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3">
               Register as Retailer
             </Button>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">
-              Logistics Partner Signup
-            </Button>
+            <Link href="/logistics-partner">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">
+                Logistics Partner Signup
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

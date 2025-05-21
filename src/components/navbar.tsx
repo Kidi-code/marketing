@@ -1,16 +1,16 @@
 // components/Navbar.tsx
-'use client'
+"use client";
 
-import Link from 'next/link'
-import Image from 'next/image'
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
+import Link from "next/link";
+import Image from "next/image";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
-} from '@/components/ui/dropdown-menu'
+} from "@/components/ui/dropdown-menu";
 import {
   Globe,
   Search,
@@ -26,7 +26,7 @@ import {
   ShoppingCart,
   Truck,
   Shield,
-} from 'lucide-react'
+} from "lucide-react";
 
 export function Navbar() {
   return (
@@ -91,13 +91,17 @@ export function Navbar() {
                   <FileText size={16} /> <span>Templates</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-center space-x-2">
-                  <MapPin size={16} /> <span>Live Tracker</span>
+                  <Link href="/product-tracking">
+                    <Button variant="ghost">Product Tracking</Button>
+                  </Link>
                 </DropdownMenuItem>
+
                 <DropdownMenuItem className="flex items-center space-x-2">
                   <AlertCircle size={16} /> <span>Dispute</span>
                 </DropdownMenuItem>
+
                 <DropdownMenuItem className="flex items-center space-x-2">
-                  <CheckCircle size={16} /> <span>Payment</span>
+                  <CheckCircle size={16} /> <span>Resolution</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -121,10 +125,7 @@ export function Navbar() {
                   <Truck size={16} /> <span>Logistics</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-center space-x-2">
-                  <Shield size={16} /> <span>Farmers</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="flex items-center space-x-2">
-                  <Shield size={16} /> <span>Manufecters</span>
+                  <Shield size={16} /> <span>Government</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
