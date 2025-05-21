@@ -34,7 +34,7 @@ export default function PaymentsPage() {
 
   async function connectWallet() {
     if (!(window as any).ethereum) {
-      alert("MetaMask not installed");
+      // alert("MetaMask not installed");
       return;
     }
 
@@ -55,7 +55,7 @@ export default function PaymentsPage() {
 
   async function sendPayment() {
     if (!wallet.connected) {
-      alert("Connect wallet first.");
+      // alert("Connect wallet first.");
       return;
     }
 
